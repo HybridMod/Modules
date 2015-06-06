@@ -13,7 +13,7 @@ dl(){
   am start -a android.intent.action.VIEW -n com.android.browser/.BrowserActivity 
 }
 
-check_update(){ #to be edited past this point
+check_update(){
   echo
   echo "Checking updates..."
   sleep 1
@@ -57,7 +57,7 @@ install_update_apply(){
   cp -f $script $local_location
   sleep 2
   chmod 777 $local_location/$name
-  chown 0:0 $local_location/$name #note to future me: double check these permissions
+  chown 0:0 $local_location/$name
   echo
   echo "Done."
   sleep 1
